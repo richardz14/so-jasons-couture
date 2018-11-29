@@ -4,7 +4,7 @@
 	
 	        section.parallax_section_holder{
 			height: auto !important;
-			min-height: 400px;
+			min-height: 300px;
 		}
 		}
 @media only screen and (max-width: 768px){
@@ -38,7 +38,7 @@
 
 			section.parallax_section_holder {
 			height: auto !important;
-			min-height: 400px;
+			min-height: 300px;
 		}
 	
 		
