@@ -368,7 +368,7 @@
 
     body{
     	    	    	font-family: 'Open Sans', sans-serif;
-    	    	 color: #777777;     	 font-size: 13px;     	font-weight: 300;    }
+    	    	 color: #606060;     	 font-size: 15px;     	font-weight: 300;    }
             body,
 		.wrapper,
         .content,
@@ -488,7 +488,7 @@ li.narrow .second .inner ul,
 
 
 nav.main_menu > ul > li > a{
-	 color: #000000; 		    				 text-transform: ; }
+	 color: #000000; 		    				}
 
 
 
@@ -633,6 +633,11 @@ header.sticky .side_menu_button a:hover{
         border: 1px solid #eeeeee    }
 
 
+h1,
+.h1,
+.title h1 {
+		color: #000000; 		font-family: 'Montserrat', sans-serif;
+		font-size: 50px; 	line-height: 50px; 	font-style: normal; 	font-weight: 300;         text-transform: capitalize; }
 .title h1{
 	color: #ffffff; 						}
 
@@ -640,23 +645,33 @@ header.sticky .side_menu_button a:hover{
 h2,
 .h2,
 h2 a{
-	color: #000000; 		font-size: 28px; 			    letter-spacing: 0px; 	text-transform: uppercase; }
+	color: #000000; 			font-family: 'Montserrat', sans-serif;
+		font-size: 28px; 		font-style: normal; 	font-weight: 300;     letter-spacing: 0px; 	text-transform: uppercase; }
+h3,
+.h3,
+h3 a{
+	color: #000000; 		font-family: 'Montserrat', sans-serif;
+				font-style: normal; 	font-weight: 300;     	}
 h4,
 .h4,
 h4 a{
-	color: #777777; 		font-size: 17px; 	line-height: 29px; 		font-weight: 300;     letter-spacing: 0px; 	}
+	color: #000000; 			font-family: 'Montserrat', sans-serif;
+		font-size: 17px; 	line-height: 29px; 	font-style: normal; 	font-weight: 300;     letter-spacing: 0px; 	}
 h5,
 .h5,
 h5 a,
 .q_icon_with_title .icon_text_holder h5.icon_title{
-	color: #000000; 		font-size: 16px; 	line-height: 20px; 		    letter-spacing: 0px; 	text-transform: uppercase; }
+	color: #000000; 		font-family: 'Montserrat', sans-serif;
+		font-size: 16px; 	line-height: 20px; 	font-style: normal; 	font-weight: 300;     letter-spacing: 0px; 	text-transform: uppercase; }
 h6,
 .h6,
 h6 a {
-	color: #000000; 		font-size: 12px; 				letter-spacing: 0px; 	}
+	color: #000000; 		font-family: 'Montserrat', sans-serif;
+		font-size: 12px; 		font-style: normal;  	font-weight: 300; 	letter-spacing: 0px; 	}
 
     p{
-    	color: #777777;    	    	font-size: 13px;    	line-height: 22px;    	    	font-weight: 300;    	    	    }
+    	color: #606060;    	    		font-family: 'Open Sans', sans-serif;
+    	    	font-size: 15px;    	line-height: 25px;    	    	font-weight: 300;    	    	    }
     .filter_holder ul li span,
     blockquote h5,
     .q_social_icon_holder .simple_social,
@@ -686,7 +701,7 @@ h6 a {
     .side_menu #lang_sel_list.lang_sel_list_horizontal a,
     .side_menu #lang_sel_list.lang_sel_list_vertical a,
     #lang_sel_footer a{
-    	color: #777777;    }
+    	color: #606060;    }
     .header_top #lang_sel > ul > li > a, 
     .header_top #lang_sel_click > ul > li> a,
     footer #lang_sel ul li a,
@@ -700,7 +715,7 @@ h6 a {
     section.side_menu #lang_sel_click > ul > li > a,
     section.side_menu #lang_sel_click ul ul a,
     section.side_menu #lang_sel_click ul ul a:visited{
-    	color: #777777 !important;    }
+    	color: #606060 !important;    }
             .woocommerce del,
         .woocommerce-page del,
         .woocommerce input[type='text']:not(.qode_search_field),
@@ -734,7 +749,7 @@ h6 a {
         .wpb_widgetised_column ul.product_list_widget li del span.amount,
         .shopping_cart_dropdown ul li a,
         .select2-drop{
-            color: #777777;
+            color: #606060;
         }
     a, p a{
 	color: #ff7e00;			}
