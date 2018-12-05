@@ -472,6 +472,13 @@ li.narrow .second .inner ul,
 
 
 
+    .touch section.parallax_section_holder{
+		height: auto !important;
+		min-height: 300px;  
+		background-position: center top !important;  
+		background-attachment: scroll;
+        background-size: cover;
+	}
 
 
 
