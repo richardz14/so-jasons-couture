@@ -26,6 +26,7 @@ var header_bottom_border_weight = 1;
 var scroll_amount_for_fixed_hiding = 200;
 var paspartu_width_init = 0.02;
 var add_for_admin_bar = 0;
+	min_header_height_sticky = 80;
 
 var logo_height = 130; // proya logo height
 var logo_width = 280; // proya logo width
@@ -152,7 +153,7 @@ function showContactMap() {
 var no_ajax_pages = [];
 var qode_root = 'http://localhost/JC/wordpress/';
 var theme_root = 'http://localhost/JC/wordpress/wp-content/themes/bridge/';
-var header_style_admin = "";
+var header_style_admin = "light";
 if(typeof no_ajax_obj !== 'undefined') {
 	no_ajax_pages = no_ajax_obj.no_ajax_pages;
 }
