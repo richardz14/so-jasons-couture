@@ -10,12 +10,12 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping database structure for JC_new
-CREATE DATABASE IF NOT EXISTS `JC_new` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `JC_new`;
+-- Dumping database structure for jasonsdb
+CREATE DATABASE IF NOT EXISTS `jasonsdb` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `jasonsdb`;
 
 
--- Dumping structure for table JC_new.wp_commentmeta
+-- Dumping structure for table jasonsdb.wp_commentmeta
 CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `comment_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -26,12 +26,12 @@ CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_commentmeta: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_commentmeta: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_commentmeta` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_commentmeta` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_comments
+-- Dumping structure for table jasonsdb.wp_comments
 CREATE TABLE IF NOT EXISTS `wp_comments` (
   `comment_ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `comment_post_ID` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -57,14 +57,14 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
   KEY `woo_idx_comment_type` (`comment_type`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_comments: ~1 rows (approximately)
+-- Dumping data for table jasonsdb.wp_comments: ~1 rows (approximately)
 /*!40000 ALTER TABLE `wp_comments` DISABLE KEYS */;
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
 	(1, 1, 'A WordPress Commenter', 'wapuu@wordpress.example', 'https://wordpress.org/', '', '2018-12-17 22:06:50', '2018-12-17 22:06:50', 'Hi, this is a comment.\nTo get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.\nCommenter avatars come from <a href="https://gravatar.com">Gravatar</a>.', 0, 'post-trashed', '', '', 0, 0);
 /*!40000 ALTER TABLE `wp_comments` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_links
+-- Dumping structure for table jasonsdb.wp_links
 CREATE TABLE IF NOT EXISTS `wp_links` (
   `link_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `link_url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -83,12 +83,12 @@ CREATE TABLE IF NOT EXISTS `wp_links` (
   KEY `link_visible` (`link_visible`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_links: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_links: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_links` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_links` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_options
+-- Dumping structure for table jasonsdb.wp_options
 CREATE TABLE IF NOT EXISTS `wp_options` (
   `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `option_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   UNIQUE KEY `option_name` (`option_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2007 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_options: ~358 rows (approximately)
+-- Dumping data for table jasonsdb.wp_options: ~358 rows (approximately)
 /*!40000 ALTER TABLE `wp_options` DISABLE KEYS */;
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 	(1, 'siteurl', 'http://localhost/new_JC', 'yes'),
@@ -462,7 +462,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 /*!40000 ALTER TABLE `wp_options` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_postmeta
+-- Dumping structure for table jasonsdb.wp_postmeta
 CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -473,7 +473,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=6857 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_postmeta: ~3,393 rows (approximately)
+-- Dumping data for table jasonsdb.wp_postmeta: ~3,393 rows (approximately)
 /*!40000 ALTER TABLE `wp_postmeta` DISABLE KEYS */;
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 	(1, 2, '_wp_page_template', 'default'),
@@ -3874,7 +3874,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 /*!40000 ALTER TABLE `wp_postmeta` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_posts
+-- Dumping structure for table jasonsdb.wp_posts
 CREATE TABLE IF NOT EXISTS `wp_posts` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `post_author` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -3906,7 +3906,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `post_author` (`post_author`)
 ) ENGINE=InnoDB AUTO_INCREMENT=851 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_posts: ~426 rows (approximately)
+-- Dumping data for table jasonsdb.wp_posts: ~426 rows (approximately)
 /*!40000 ALTER TABLE `wp_posts` DISABLE KEYS */;
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 	(1, 1, '2018-12-17 22:06:50', '2018-12-17 22:06:50', 'Welcome to WordPress. This is your first post. Edit or delete it, then start writing!', 'Hello world!', '', 'trash', 'open', 'open', '', 'hello-world__trashed', '', '', '2018-12-18 01:24:42', '2018-12-18 01:24:42', '', 0, 'http://localhost/new_JC/?p=1', 0, 'post', '', 1),
@@ -4338,7 +4338,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 /*!40000 ALTER TABLE `wp_posts` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_termmeta
+-- Dumping structure for table jasonsdb.wp_termmeta
 CREATE TABLE IF NOT EXISTS `wp_termmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -4349,7 +4349,7 @@ CREATE TABLE IF NOT EXISTS `wp_termmeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_termmeta: ~21 rows (approximately)
+-- Dumping data for table jasonsdb.wp_termmeta: ~21 rows (approximately)
 /*!40000 ALTER TABLE `wp_termmeta` DISABLE KEYS */;
 INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUES
 	(11, 15, 'product_count_product_cat', '0'),
@@ -4376,7 +4376,7 @@ INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUE
 /*!40000 ALTER TABLE `wp_termmeta` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_terms
+-- Dumping structure for table jasonsdb.wp_terms
 CREATE TABLE IF NOT EXISTS `wp_terms` (
   `term_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -4387,7 +4387,7 @@ CREATE TABLE IF NOT EXISTS `wp_terms` (
   KEY `name` (`name`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_terms: ~32 rows (approximately)
+-- Dumping data for table jasonsdb.wp_terms: ~32 rows (approximately)
 /*!40000 ALTER TABLE `wp_terms` DISABLE KEYS */;
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 	(1, 'Uncategorized', 'uncategorized', 0),
@@ -4425,7 +4425,7 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 /*!40000 ALTER TABLE `wp_terms` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_term_relationships
+-- Dumping structure for table jasonsdb.wp_term_relationships
 CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
   `object_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `term_taxonomy_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -4434,7 +4434,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
   KEY `term_taxonomy_id` (`term_taxonomy_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_term_relationships: ~294 rows (approximately)
+-- Dumping data for table jasonsdb.wp_term_relationships: ~294 rows (approximately)
 /*!40000 ALTER TABLE `wp_term_relationships` DISABLE KEYS */;
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
 	(1, 1, 0),
@@ -4734,7 +4734,7 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 /*!40000 ALTER TABLE `wp_term_relationships` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_term_taxonomy
+-- Dumping structure for table jasonsdb.wp_term_taxonomy
 CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
   `term_taxonomy_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -4747,7 +4747,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
   KEY `taxonomy` (`taxonomy`)
 ) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_term_taxonomy: ~32 rows (approximately)
+-- Dumping data for table jasonsdb.wp_term_taxonomy: ~32 rows (approximately)
 /*!40000 ALTER TABLE `wp_term_taxonomy` DISABLE KEYS */;
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
 	(1, 1, 'category', '', 0, 0),
@@ -4785,7 +4785,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 /*!40000 ALTER TABLE `wp_term_taxonomy` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_usermeta
+-- Dumping structure for table jasonsdb.wp_usermeta
 CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -4796,7 +4796,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_usermeta: ~25 rows (approximately)
+-- Dumping data for table jasonsdb.wp_usermeta: ~25 rows (approximately)
 /*!40000 ALTER TABLE `wp_usermeta` DISABLE KEYS */;
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
 	(1, 1, 'nickname', 'admin'),
@@ -4827,7 +4827,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 /*!40000 ALTER TABLE `wp_usermeta` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_users
+-- Dumping structure for table jasonsdb.wp_users
 CREATE TABLE IF NOT EXISTS `wp_users` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_login` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -4845,14 +4845,14 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
   KEY `user_email` (`user_email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_users: ~1 rows (approximately)
+-- Dumping data for table jasonsdb.wp_users: ~1 rows (approximately)
 /*!40000 ALTER TABLE `wp_users` DISABLE KEYS */;
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 	(1, 'admin', '$P$BajkXd.fNrxOvWqJaxjBGmpIUlVG5K1', 'admin', 'jdubria1998@gmail.com', '', '2018-12-17 22:06:49', '', 0, 'admin');
 /*!40000 ALTER TABLE `wp_users` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_wc_download_log
+-- Dumping structure for table jasonsdb.wp_wc_download_log
 CREATE TABLE IF NOT EXISTS `wp_wc_download_log` (
   `download_log_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `timestamp` datetime NOT NULL,
@@ -4865,12 +4865,12 @@ CREATE TABLE IF NOT EXISTS `wp_wc_download_log` (
   CONSTRAINT `fk_wp_wc_download_log_permission_id` FOREIGN KEY (`permission_id`) REFERENCES `wp_woocommerce_downloadable_product_permissions` (`permission_id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_wc_download_log: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_wc_download_log: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_wc_download_log` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_wc_download_log` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_wc_webhooks
+-- Dumping structure for table jasonsdb.wp_wc_webhooks
 CREATE TABLE IF NOT EXISTS `wp_wc_webhooks` (
   `webhook_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `status` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -4890,12 +4890,12 @@ CREATE TABLE IF NOT EXISTS `wp_wc_webhooks` (
   KEY `user_id` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_wc_webhooks: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_wc_webhooks: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_wc_webhooks` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_wc_webhooks` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_api_keys
+-- Dumping structure for table jasonsdb.wp_woocommerce_api_keys
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_api_keys` (
   `key_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` bigint(20) unsigned NOT NULL,
@@ -4911,12 +4911,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_api_keys` (
   KEY `consumer_secret` (`consumer_secret`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_api_keys: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_api_keys: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_api_keys` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_api_keys` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_attribute_taxonomies
+-- Dumping structure for table jasonsdb.wp_woocommerce_attribute_taxonomies
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_attribute_taxonomies` (
   `attribute_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `attribute_name` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -4928,12 +4928,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_attribute_taxonomies` (
   KEY `attribute_name` (`attribute_name`(20))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_attribute_taxonomies: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_attribute_taxonomies: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_attribute_taxonomies` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_attribute_taxonomies` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_downloadable_product_permissions
+-- Dumping structure for table jasonsdb.wp_woocommerce_downloadable_product_permissions
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_downloadable_product_permissions` (
   `permission_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `download_id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -4952,12 +4952,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_downloadable_product_permissions` (
   KEY `order_id` (`order_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_downloadable_product_permissions: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_downloadable_product_permissions: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_downloadable_product_permissions` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_downloadable_product_permissions` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_log
+-- Dumping structure for table jasonsdb.wp_woocommerce_log
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_log` (
   `log_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `timestamp` datetime NOT NULL,
@@ -4969,12 +4969,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_log` (
   KEY `level` (`level`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_log: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_log: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_log` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_log` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_order_itemmeta
+-- Dumping structure for table jasonsdb.wp_woocommerce_order_itemmeta
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_order_itemmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `order_item_id` bigint(20) unsigned NOT NULL,
@@ -4985,12 +4985,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_order_itemmeta` (
   KEY `meta_key` (`meta_key`(32))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_order_itemmeta: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_order_itemmeta: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_order_itemmeta` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_order_itemmeta` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_order_items
+-- Dumping structure for table jasonsdb.wp_woocommerce_order_items
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_order_items` (
   `order_item_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `order_item_name` text COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -5000,12 +5000,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_order_items` (
   KEY `order_id` (`order_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_order_items: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_order_items: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_order_items` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_order_items` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_payment_tokenmeta
+-- Dumping structure for table jasonsdb.wp_woocommerce_payment_tokenmeta
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_payment_tokenmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `payment_token_id` bigint(20) unsigned NOT NULL,
@@ -5016,12 +5016,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_payment_tokenmeta` (
   KEY `meta_key` (`meta_key`(32))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_payment_tokenmeta: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_payment_tokenmeta: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_payment_tokenmeta` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_payment_tokenmeta` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_payment_tokens
+-- Dumping structure for table jasonsdb.wp_woocommerce_payment_tokens
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_payment_tokens` (
   `token_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `gateway_id` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -5033,12 +5033,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_payment_tokens` (
   KEY `user_id` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_payment_tokens: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_payment_tokens: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_payment_tokens` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_payment_tokens` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_sessions
+-- Dumping structure for table jasonsdb.wp_woocommerce_sessions
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_sessions` (
   `session_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `session_key` char(32) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -5048,14 +5048,14 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_sessions` (
   UNIQUE KEY `session_key` (`session_key`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_sessions: ~1 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_sessions: ~1 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_sessions` DISABLE KEYS */;
 INSERT INTO `wp_woocommerce_sessions` (`session_id`, `session_key`, `session_value`, `session_expiry`) VALUES
 	(1, '1', 'a:8:{s:4:"cart";s:411:"a:1:{s:32:"9b698eb3105bd82528f23d0c92dedfc0";a:11:{s:3:"key";s:32:"9b698eb3105bd82528f23d0c92dedfc0";s:10:"product_id";i:643;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:3;s:9:"data_hash";s:32:"b5c1d5ca8bae6d4896cf1807cdf763f0";s:13:"line_tax_data";a:2:{s:8:"subtotal";a:0:{}s:5:"total";a:0:{}}s:13:"line_subtotal";d:75;s:17:"line_subtotal_tax";i:0;s:10:"line_total";d:75;s:8:"line_tax";i:0;}}";s:11:"cart_totals";s:405:"a:15:{s:8:"subtotal";s:5:"75.00";s:12:"subtotal_tax";d:0;s:14:"shipping_total";s:4:"0.00";s:12:"shipping_tax";d:0;s:14:"shipping_taxes";a:0:{}s:14:"discount_total";d:0;s:12:"discount_tax";d:0;s:19:"cart_contents_total";s:5:"75.00";s:17:"cart_contents_tax";d:0;s:19:"cart_contents_taxes";a:0:{}s:9:"fee_total";s:4:"0.00";s:7:"fee_tax";d:0;s:9:"fee_taxes";a:0:{}s:5:"total";s:5:"75.00";s:9:"total_tax";d:0;}";s:15:"applied_coupons";s:6:"a:0:{}";s:22:"coupon_discount_totals";s:6:"a:0:{}";s:26:"coupon_discount_tax_totals";s:6:"a:0:{}";s:21:"removed_cart_contents";s:6:"a:0:{}";s:8:"customer";s:709:"a:26:{s:2:"id";s:1:"1";s:13:"date_modified";s:0:"";s:8:"postcode";s:0:"";s:4:"city";s:0:"";s:9:"address_1";s:0:"";s:7:"address";s:0:"";s:9:"address_2";s:0:"";s:5:"state";s:0:"";s:7:"country";s:2:"GB";s:17:"shipping_postcode";s:0:"";s:13:"shipping_city";s:0:"";s:18:"shipping_address_1";s:0:"";s:16:"shipping_address";s:0:"";s:18:"shipping_address_2";s:0:"";s:14:"shipping_state";s:0:"";s:16:"shipping_country";s:2:"GB";s:13:"is_vat_exempt";s:0:"";s:19:"calculated_shipping";s:0:"";s:10:"first_name";s:0:"";s:9:"last_name";s:0:"";s:7:"company";s:0:"";s:5:"phone";s:0:"";s:5:"email";s:21:"jdubria1998@gmail.com";s:19:"shipping_first_name";s:0:"";s:18:"shipping_last_name";s:0:"";s:16:"shipping_company";s:0:"";}";s:10:"wc_notices";N;}', 1545261402);
 /*!40000 ALTER TABLE `wp_woocommerce_sessions` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_shipping_zones
+-- Dumping structure for table jasonsdb.wp_woocommerce_shipping_zones
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zones` (
   `zone_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `zone_name` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -5063,12 +5063,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zones` (
   PRIMARY KEY (`zone_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_shipping_zones: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_shipping_zones: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_shipping_zones` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_shipping_zones` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_shipping_zone_locations
+-- Dumping structure for table jasonsdb.wp_woocommerce_shipping_zone_locations
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zone_locations` (
   `location_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `zone_id` bigint(20) unsigned NOT NULL,
@@ -5079,12 +5079,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zone_locations` (
   KEY `location_type_code` (`location_type`(10),`location_code`(20))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_shipping_zone_locations: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_shipping_zone_locations: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_shipping_zone_locations` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_shipping_zone_locations` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_shipping_zone_methods
+-- Dumping structure for table jasonsdb.wp_woocommerce_shipping_zone_methods
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zone_methods` (
   `zone_id` bigint(20) unsigned NOT NULL,
   `instance_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -5094,12 +5094,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zone_methods` (
   PRIMARY KEY (`instance_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_shipping_zone_methods: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_shipping_zone_methods: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_shipping_zone_methods` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_shipping_zone_methods` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_tax_rates
+-- Dumping structure for table jasonsdb.wp_woocommerce_tax_rates
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_tax_rates` (
   `tax_rate_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `tax_rate_country` varchar(2) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -5118,12 +5118,12 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_tax_rates` (
   KEY `tax_rate_priority` (`tax_rate_priority`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_tax_rates: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_tax_rates: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_tax_rates` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_tax_rates` ENABLE KEYS */;
 
 
--- Dumping structure for table JC_new.wp_woocommerce_tax_rate_locations
+-- Dumping structure for table jasonsdb.wp_woocommerce_tax_rate_locations
 CREATE TABLE IF NOT EXISTS `wp_woocommerce_tax_rate_locations` (
   `location_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `location_code` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -5134,7 +5134,7 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_tax_rate_locations` (
   KEY `location_type_code` (`location_type`(10),`location_code`(20))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table JC_new.wp_woocommerce_tax_rate_locations: ~0 rows (approximately)
+-- Dumping data for table jasonsdb.wp_woocommerce_tax_rate_locations: ~0 rows (approximately)
 /*!40000 ALTER TABLE `wp_woocommerce_tax_rate_locations` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_woocommerce_tax_rate_locations` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
