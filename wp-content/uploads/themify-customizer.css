@@ -1,0 +1,44 @@
+/* Themify Customize Styling */
+body[class*="themify"] #site-logo a {	
+	font-family:Montserrat;	font-weight:normal;
+ 
+}
+body[class*="themify"] #site-logo a img {		width: 200px; 
+}
+@media screen and (max-width: 1024px) { /* Themify Customize Styling */
+body[class*="themify"] #site-logo a img {		width: 200px; 
+}
+ }@media screen and (max-width: 716px) { /* Themify Customize Styling */
+body[class*="themify"] #site-logo a img {		width: 200px; 
+}
+ }@media screen and (max-width: 414px) { /* Themify Customize Styling */
+body[class*="themify"] #site-logo a img {		width: 200px; 
+}
+ }
+/* Themify Custom CSS */
+.price{
+	display: none;
+}
+.top-icon-wrap .wishlist{
+	display: none;
+}
+.top-icon-wrap .cart{
+	display: none;
+}
+.price .amount{
+	display: none;
+}
+.product-share-wrap .wishlist-wrap{
+	display: none;
+}
+
+.woocommerce ul.products li.product .add_to_cart_button{
+	display: none;
+}
+.share-button{
+	display: none;
+}
+
+.cart{
+	display: none;
+}
